@@ -1,0 +1,76 @@
+// colors
+OFF_WHITE = #fefefe
+GRAY = #666666
+DARK_GRAY = #333333
+
+// typography
+h1
+  letter-spacing -1px
+  font-size 10em
+  color GRAY
+  margin-bottom 0px
+
+h2
+  font-weight 200
+  letter-spacing 1px
+  color lighten(GRAY, 33%)
+  font-size 1.6em
+
+h3
+  margin-top 20px
+  color GRAY
+
+p
+  color GRAY
+  font-weight 100
+  font-size 1em
+  margin 4px
+
+a
+  color lighten(GRAY, 20%)
+  -webkit-transition color 0.2s linear
+  -moz-transition color 0.2s linear
+  -ms-transition color 0.2s linear
+  -o-transition color 0.2s linear
+  transition color 0.2s linear
+  &:hover
+    color lighten(GRAY, 50%)
+
+// globals
+
+html, body
+  margin 0
+  padding 0
+  background OFF_WHITE
+  font-family 'Lora'
+
+.container
+  margin 0 auto
+  width 960px
+  margin-bottom 100px
+
+.box
+  width 50%
+  margin 30px
+  padding 10px 30px
+  background darken(OFF_WHITE, 2%)
+  border-radius 10px
+  border 1px solid darken(OFF_WHITE, 20%)
+  p
+    color darken(OFF_WHITE, 60%)
+    margin 15px
+
+footer
+  margin 0 auto
+  text-align center
+  color GRAY
+  h4
+    text-transform uppercase
+    letter-spacing 2px
+    font-weight bold
+    font-size 9px
+    margin 3px
+  a
+    font-size 9px
+
+    text-decoration none
