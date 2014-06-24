@@ -21,8 +21,10 @@ func main() {
     r.HTML(200, "main", "/d/" + random_string)
   })
 
+  /* Main route handles incoming ** from user */
   m.Get("/d/**", func(params martini.Params, r render.Render) {
-    cmd := exec.Command("ruby", "./interpreter/interpreter.rb", string(params["_1"]))
+    /* Execute ruby script to parse the command */
+    cmd := exec.Command("ruby", "./interpreter/parser.rb", string(params["_1"]))
     translation, _ := cmd.Output()
     data := struct {
       URL_string string

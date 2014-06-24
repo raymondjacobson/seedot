@@ -6,6 +6,7 @@ import (
   "time"
 )
 
+/*returns a random string of between minsize and minsize + variance */
 func RandomString(minsize, variance int) string {
   abet := "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@$^&*()-=[];.,<>:}{}'"
   random_string := ""
